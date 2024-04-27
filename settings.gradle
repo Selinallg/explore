@@ -1,0 +1,22 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+rootProject.name = "explore"
+include ':app'
+include ':widget:android-simple-widget'
+include ':widget:WidgetExamples:BroadcastWidgetExample'
+include ':widget:WidgetExamples:ConfigurableWidgetExample'
+include ':widget:WidgetExamples:SimpleWidgetExample'
+include ':widget:WidgetExamples:UpdatingWidgetExample'
