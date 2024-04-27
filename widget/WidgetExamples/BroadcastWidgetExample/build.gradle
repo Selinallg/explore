@@ -2,16 +2,20 @@ apply plugin: 'com.android.application'
 
 android {
     namespace "com.erenutku.broadcastwidgetexample"
-    compileSdkVersion 24
-    buildToolsVersion "24.0.0"
+    compileSdk 34
     defaultConfig {
         applicationId "com.erenutku.broadcastwidgetexample"
-        minSdkVersion 17
-        targetSdkVersion 24
+        minSdk 24
+        targetSdk 34
         versionCode 1
         versionName "1.0"
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
     buildTypes {
         release {
             minifyEnabled false

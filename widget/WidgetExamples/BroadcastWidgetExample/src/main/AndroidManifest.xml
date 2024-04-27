@@ -7,7 +7,8 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -15,7 +16,8 @@
             </intent-filter>
         </activity>
 
-        <receiver android:name=".BroadcastWidget">
+        <receiver android:name=".BroadcastWidget"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
             </intent-filter>
