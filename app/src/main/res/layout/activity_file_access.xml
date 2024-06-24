@@ -10,7 +10,7 @@
     <Button
         android:layout_marginTop="100dp"
         android:onClick="goFile"
-        android:text="跳转"
+        android:text="2跳转"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 
